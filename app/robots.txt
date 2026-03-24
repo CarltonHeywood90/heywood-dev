@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/', // Keep any sensitive folders hidden
     },
-    sitemap: 'https://heywood.dev/sitemap.xml',
+    sitemap: 'https://heywooddev.com/sitemap.xml',
   };
 }
