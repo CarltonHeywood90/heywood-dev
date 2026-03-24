@@ -8,7 +8,7 @@ type SitemapRoute = {
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://heywood.dev';
+  const baseUrl = 'https://heywooddev.com';
 
   const routes: SitemapRoute[] = [
     { path: '', priority: 1.0, changeFrequency: 'weekly' },
