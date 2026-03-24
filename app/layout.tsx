@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://heywood.dev",
+    url: "https://heywooddev.com",
     siteName: "Heywood Dev",
     title: "Heywood Dev | Web Development & IT Management",
     description: "Modern web solutions and strategic IT consulting.",

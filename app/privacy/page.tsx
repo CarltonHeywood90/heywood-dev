@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
         <section>
           <h2 className="text-2xl font-bold text-dark-slate mb-3">1. Overview</h2>
           <p>
-            Heywood Dev (we, us, or our) operates the website located at heywood.dev. 
+            Heywood Dev (we, us, or our) operates the website located at heywooddev.com 
             Your privacy is important to us. This policy explains how we collect, use, and protect 
             your personal information when you visit our site or book a consultation.
           </p>

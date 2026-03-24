@@ -10,7 +10,7 @@ export default function TermsOfService() {
         <section>
           <h2 className="text-2xl font-bold text-dark-slate mb-3">1. Acceptance of Terms</h2>
           <p>
-            By accessing heywood.dev or engaging in our services, you agree to be bound by these 
+            By accessing heywooddev.com or engaging in our services, you agree to be bound by these 
             Terms of Service. If you do not agree, please do not use this website or our services.
           </p>
         </section>

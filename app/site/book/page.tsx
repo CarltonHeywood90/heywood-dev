@@ -14,7 +14,7 @@ export default function BookPage() {
         <div className="bg-white p-12 border-2 border-dashed border-baby-blue/30 rounded-3xl flex flex-col items-center">
           <p className="text-slate-400 mb-6 italic">Calendar Integration Coming Soon</p>
           <a 
-            href="mailto:your-email@heywood.dev" 
+            href="mailto:carlton@heywooddev.com" 
             className="btn-primary text-lg"
           >
             Email to Schedule
