@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Heywood Dev | Full-Stack Development & IT Management
+The official professional portfolio and consultation hub for Carlton Heywood, a freelance Full-Stack Developer and IT Management specialist. This platform is designed to convert high-intent leads into consultations while demonstrating a clean, modern approach to enterprise-grade web architecture.
 
-## Getting Started
+🚀 The Mission: Professionalism & Conversion
+The primary objective of this site is to streamline the client acquisition funnel. By moving away from "builder" platforms and onto a custom-coded stack, the site achieves superior performance, SEO flexibility, and full ownership of the user journey.
 
-First, run the development server:
+Key Business Features:
+Consultation Engine: Integrated Calendly scheduling to automate lead capture and eliminate the back-and-forth of booking professional consultations.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Service-Focused UI: Clearly defined service tiers focusing on Full-Stack Web Development and IT Management Solutions.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Strategic Separation: Specifically engineered to focus on technical development, maintaining a distinct professional boundary from my audio engineering and creative projects.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🛠 Tech Stack & Infrastructure
+This project demonstrates an ability to deploy production-ready applications on high-performance, cost-effective infrastructure.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Framework: Next.js / React
 
-## Learn More
+Styling: Tailwind CSS (Clean, minimalist, professional aesthetic)
 
-To learn more about Next.js, take a look at the following resources:
+Hosting: Cloudflare Pages (Utilized for superior edge performance and CI/CD reliability)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Deployment Workflow: Git-integrated pipeline for seamless production updates.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+✨ Technical Highlights
+Optimized Performance: Leverages Next.js static site generation (SSG) to ensure near-instant load times—crucial for maintaining user retention during the "first impression" phase.
 
-## Deploy on Vercel
+Aesthetic UI/UX: A "Modern-Professional" design philosophy that balances high-tech capability with an approachable, clean interface.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Zero-Bloat Codebase: Built from the ground up without heavy third-party templates to ensure a high-scoring Lighthouse profile and easy maintainability.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📈 Future Roadmap
+Currently in active development to further bridge the gap between technical proof and client trust:
+
+Project Showcase: Implementing a dynamic portfolio section to highlight successful client "rescue missions" and SaaS prototypes.
+
+GitHub Integration: Strategically linking a polished GitHub presence to provide recruiters with direct access to code quality and architectural patterns.
+
+🔗 Live Site
+heywood-dev.pages.dev
+
+Contact & Collaboration
+Looking for a developer who understands the intersection of IT Management and Modern Web Development?
+
+Book a Consultation via Calendly
