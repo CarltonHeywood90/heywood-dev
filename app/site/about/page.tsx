@@ -29,7 +29,7 @@ export default function AboutPage() {
           
           <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
             <p>
-              Led by a specialist in **IT Management and Full-Stack Development**, 
+              Led by a specialist in IT Management and Full-Stack Development, 
               Heywood Dev focuses on building high-performance digital solutions 
               that bridge the gap between complex backend logic and intuitive user interfaces.
             </p>
