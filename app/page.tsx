@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ProjectGrid from './components/ProjectGrid'; // Adjust path if needed
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
             I build scalable digital infrastructure for your business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="https://calendly.com/cjwood1/30min" className="btn-primary text-lg px-8 py-4">
+            <Link href="https://calendly.com/cjwood1/30min" className="bg-baby-blue text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-baby-blue/90 transition-all shadow-lg shadow-baby-blue/20">
               Book a Consultation
             </Link>
             <Link href="/site/services" className="px-8 py-4 border-2 border-baby-blue text-baby-blue font-medium rounded-lg hover:bg-baby-blue/10 transition-all">
@@ -35,12 +36,11 @@ export default function Home() {
             Expertise in Modern Technologies
           </p>
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 grayscale opacity-70">
-            {/* You can swap these with real icons later */}
-            <span className="text-xl font-bold text-slate-700 underline decoration-baby-blue">Next.js</span>
-            <span className="text-xl font-bold text-slate-700 underline decoration-baby-blue">Python</span>
-            <span className="text-xl font-bold text-slate-700 underline decoration-baby-blue">Node.js</span>
-            <span className="text-xl font-bold text-slate-700 underline decoration-baby-blue">React</span>
-            <span className="text-xl font-bold text-slate-700 underline decoration-baby-blue">SQL</span>
+            <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">Next.js</span>
+            <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">Python</span>
+            <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">Node.js</span>
+            <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">React</span>
+            <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">SQL</span>
           </div>
         </div>
       </section>
@@ -52,11 +52,39 @@ export default function Home() {
           { title: "IT Management", desc: "Expert oversight of your digital infrastructure and cloud deployments." },
           { title: "Fast Deployment", desc: "Optimized workflows using GitHub and Cloudflare for near-instant updates." }
         ].map((feature, i) => (
-          <div key={i} className="p-8 border border-slate-100 rounded-xl hover:shadow-md transition-shadow">
+          <div key={i} className="p-8 border border-slate-100 rounded-xl hover:shadow-md transition-shadow bg-white">
             <h3 className="text-xl font-bold text-dark-slate mb-3">{feature.title}</h3>
             <p className="text-slate-500 leading-relaxed">{feature.desc}</p>
           </div>
         ))}
+      </section>
+
+      {/* 4. PORTFOLIO GRID SECTION (The New Addition) */}
+      <section className="max-w-7xl mx-auto px-6">
+        <div className="mb-12">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-dark-slate mb-4">
+            Project <span className="text-baby-blue">Showcase</span>
+          </h2>
+          <div className="h-1 w-20 bg-baby-blue rounded-full mb-6"></div>
+          <p className="text-slate-500 max-w-2xl">
+            A selection of custom builds ranging from HIPAA-compliant medical sites to 
+            SaaS prototypes and interactive web tools.
+          </p>
+        </div>
+        <ProjectGrid />
+      </section>
+
+      {/* 5. FINAL CTA SECTION */}
+      <section className="max-w-7xl mx-auto px-6 mb-20">
+        <div className="bg-dark-slate rounded-3xl p-12 text-center text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Scale Your Infrastructure?</h2>
+          <p className="text-slate-300 mb-10 max-w-xl mx-auto">
+            We should discuss how we can modernize your web presence and streamline your backend workflows.
+          </p>
+          <Link href="https://calendly.com/cjwood1/30min" className="inline-block bg-baby-blue hover:bg-baby-blue/90 text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105">
+            Book My 30-Min Consultation
+          </Link>
+        </div>
       </section>
     </div>
   );
