@@ -11,7 +11,7 @@ const ProjectGrid = () => {
             Recent Builds & Solutions
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            From HIPAA-compliant healthcare migrations to specialized SaaS prototypes. 
+            Specialized SaaS prototypes. 
             Practical code solving real-world business problems.
           </p>
         </div>

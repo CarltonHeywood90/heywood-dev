@@ -67,7 +67,7 @@ export default function Home() {
           </h2>
           <div className="h-1 w-20 bg-baby-blue rounded-full mb-6"></div>
           <p className="text-slate-500 max-w-2xl">
-            A selection of custom builds ranging from HIPAA-compliant medical sites to 
+            A selection of custom builds ranging from professional websites to 
             SaaS prototypes and interactive web tools.
           </p>
         </div>
