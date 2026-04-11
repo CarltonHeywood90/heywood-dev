@@ -36,8 +36,8 @@ export default function AboutPage() {
             <p>
               With a background rooted in meticulous trade work and advanced technical 
               strategy, I approach every project with a built-to-last mindset. Whether 
-              it is a high-converting landing page in **Next.js** or a data-driven 
-              **Python** backend, the goal is always clear: scalability, security, and speed.
+              it is a high-converting landing page in Next.js or a data-driven 
+              Python backend, the goal is always clear: scalability, security, and speed.
             </p>
             <p className="pt-4 border-t border-slate-100 italic">
               Based in Payson, Utah. Serving clients worldwide.

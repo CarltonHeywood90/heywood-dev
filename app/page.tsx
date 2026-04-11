@@ -82,7 +82,7 @@ export default function Home() {
             We should discuss how we can modernize your web presence and streamline your backend workflows.
           </p>
           <Link href="https://calendly.com/cjwood1/new-meeting" className="inline-block bg-baby-blue hover:bg-baby-blue/90 text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105">
-            Book My 30-Min Consultation
+            Book My 15-Min Consultation
           </Link>
         </div>
       </section>
