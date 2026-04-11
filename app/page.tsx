@@ -19,7 +19,7 @@ export default function Home() {
             I build scalable digital infrastructure for your business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="https://calendly.com/cjwood1/30min" className="bg-baby-blue text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-baby-blue/90 transition-all shadow-lg shadow-baby-blue/20">
+            <Link href="https://calendly.com/cjwood1/new-meeting" className="bg-baby-blue text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-baby-blue/90 transition-all shadow-lg shadow-baby-blue/20">
               Book a Consultation
             </Link>
             <Link href="/site/services" className="px-8 py-4 border-2 border-baby-blue text-baby-blue font-medium rounded-lg hover:bg-baby-blue/10 transition-all">
@@ -81,7 +81,7 @@ export default function Home() {
           <p className="text-slate-300 mb-10 max-w-xl mx-auto">
             We should discuss how we can modernize your web presence and streamline your backend workflows.
           </p>
-          <Link href="https://calendly.com/cjwood1/30min" className="inline-block bg-baby-blue hover:bg-baby-blue/90 text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105">
+          <Link href="https://calendly.com/cjwood1/new-meeting" className="inline-block bg-baby-blue hover:bg-baby-blue/90 text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105">
             Book My 30-Min Consultation
           </Link>
         </div>

@@ -27,7 +27,7 @@ export default function Header() {
             </Link>
           ))}
           <Link
-            href="https://calendly.com/cjwood1/30min"
+            href="https://calendly.com/cjwood1/new-meeting"
             target="_blank"
             className="bg-[#A2D2FF] text-white px-5 py-2.5 rounded-lg font-bold"
           >

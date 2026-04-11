@@ -20,7 +20,7 @@ export default function Footer() {
           <ul className="space-y-2 text-sm text-slate-500">
             <li><Link href="/site/services" className="hover:text-[#A2D2FF]">Our Services</Link></li>
             <li><Link href="/site/contact" className="hover:text-[#A2D2FF]">Contact & Hours</Link></li>
-            <li><Link href="https://calendly.com/cjwood1/30min" className="hover:text-[#A2D2FF]">Book Me</Link></li>
+            <li><Link href="https://calendly.com/cjwood1/new-meeting" className="hover:text-[#A2D2FF]">Book Me</Link></li>
           </ul>
         </div>
 

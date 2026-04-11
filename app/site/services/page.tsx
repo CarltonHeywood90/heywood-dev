@@ -61,7 +61,7 @@ export default function ServicesPage() {
           I specialize in custom integrations and solving complex workflow problems. 
           We should talk about how we can streamline your business.
         </p>
-        <a href="https://calendly.com/cjwood1/30min" className="btn-primary inline-block">
+        <a href="https://calendly.com/cjwood1/new-meeting" className="btn-primary inline-block">
           Start Your Project
         </a>
       </div>

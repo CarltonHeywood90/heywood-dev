@@ -20,7 +20,7 @@ export default function AuditPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link 
-              href="https://calendly.com/cjwood1/15min" 
+              href="https://calendly.com/cjwood1/new-meeting" 
               className="bg-baby-blue text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-baby-blue/90 transition-all shadow-lg shadow-baby-blue/20"
             >
               Book a 15-Min Technical Audit
@@ -82,7 +82,7 @@ export default function AuditPage() {
             No high-pressure sales pitch. Just a 15-minute dive into your current site performance and a roadmap to modernize it.
           </p>
           <Link 
-            href="https://calendly.com/cjwood1/15min" 
+            href="https://calendly.com/cjwood1/new-meeting" 
             className="inline-block bg-baby-blue hover:bg-baby-blue/90 text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105"
           >
             Schedule Your Free 15-Min Audit
