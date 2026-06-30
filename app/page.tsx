@@ -88,9 +88,9 @@ export default function Home() {
       {/* 5. FINAL CTA SECTION */}
       <section className="max-w-7xl mx-auto px-6 mb-20">
         <div className="bg-dark-slate rounded-3xl p-12 text-center text-white">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Scale Your Infrastructure?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to modernize your digital presence?</h2>
           <p className="text-slate-300 mb-10 max-w-xl mx-auto">
-            We should discuss how we can modernize your web presence and streamline your backend workflows.
+          Let's streamline your workflow and connect your business to the tools it needs to scale—without the technical bloat.
           </p>
           <Link href="https://calendly.com/cjwood1/new-meeting" className="inline-block bg-baby-blue hover:bg-baby-blue/90 text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105">
             Book My 15-Min Consultation
