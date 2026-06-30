@@ -10,8 +10,8 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: "Aligned West Chiropractic",
-    description: "A migration from Wix to a custom Next.js environment. Seamless Workflow Automation.",
-    tags: ["Next.js", "Tailwind CSS", "Compliance", "EHR Integration"],
+    description: "A migration from Wix to a custom Next.js environment.",
+    tags: ["Next.js", "Tailwind CSS", "Seamless Workflow Automation."],
     liveUrl: "https://www.alignedwest.com",
     codeUrl: "https://github.com/CarltonHeywood90/aligned-west-chiro-demo",
   },
