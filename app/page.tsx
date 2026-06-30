@@ -15,8 +15,7 @@ export default function Home() {
             <span className="text-baby-blue">Modern Web.</span>
           </h1>
           <p className="max-w-2xl text-slate-600 text-lg md:text-xl mb-10 leading-relaxed">
-            From high-performance Next.js interfaces to robust Python backends, 
-            I build scalable digital infrastructure for your business.
+          High-performance web interfaces powered by modern, reliable third-party integrations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="https://calendly.com/cjwood1/new-meeting" className="bg-baby-blue text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-baby-blue/90 transition-all shadow-lg shadow-baby-blue/20">
@@ -37,10 +36,10 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 grayscale opacity-70">
             <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">Next.js</span>
-            <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">Python</span>
-            <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">FastAPI</span>
+            <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">Typescript</span>
+            <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">TailwindCSS</span>
             <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">React</span>
-            <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">SQL</span>
+            <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">Vercel</span>
           </div>
         </div>
       </section>
@@ -48,8 +47,8 @@ export default function Home() {
       {/* 3. QUICK FEATURES */}
       <section className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
         {[
-          { title: "Full-Stack Development", desc: "End-to-end applications built with security and scalability at the core." },
-          { title: "IT Management", desc: "Expert oversight of your digital infrastructure and cloud deployments." },
+          { title: "Front-End Engineering.", desc: "Clean, performant, responsive design, and component-based architecture (Next.js/Tailwind)." },
+          { title: "Third-Party Integrations & Automation.", desc: "Connecting your site to the tools your business needs (Payments, Scheduling, EHRs, CRMs) so you don’t have to build them from scratch." },
           { title: "Fast Deployment", desc: "Optimized workflows using GitHub and Cloudflare for near-instant updates." }
         ].map((feature, i) => (
           <div key={i} className="p-8 border border-slate-100 rounded-xl hover:shadow-md transition-shadow bg-white">
@@ -57,6 +56,18 @@ export default function Home() {
             <p className="text-slate-500 leading-relaxed">{feature.desc}</p>
           </div>
         ))}
+      </section>
+
+      {/* 3.5 WHY STATIC BLURB */}
+      <section className="max-w-7xl mx-auto px-6">
+        <div className="bg-baby-blue/5 border border-baby-blue/10 rounded-2xl p-8 md:p-12 text-center">
+          <h3 className="text-2xl font-bold text-dark-slate mb-4">Why Static-First?</h3>
+          <p className="text-slate-600 max-w-3xl mx-auto text-lg leading-relaxed">
+            My builds are static-first, meaning they are incredibly fast, inherently secure, 
+            and cost almost nothing to host. You get a modern, professional web presence 
+            without the bloat.
+          </p>
+        </div>
       </section>
 
       {/* 4. PORTFOLIO GRID SECTION (The New Addition) */}

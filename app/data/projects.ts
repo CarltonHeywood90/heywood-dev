@@ -10,14 +10,14 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: "Aligned West Chiropractic",
-    description: "A migration from Wix to a custom Next.js environment. Integrated direct EHR scheduling to eliminate manual data entry.",
+    description: "A migration from Wix to a custom Next.js environment. Seamless Workflow Automation.",
     tags: ["Next.js", "Tailwind CSS", "Compliance", "EHR Integration"],
     liveUrl: "https://www.alignedwest.com",
     codeUrl: "https://github.com/CarltonHeywood90/aligned-west-chiro-demo",
   },
   {
     title: "Tru Balance Massage",
-    description: "Technical debt recovery and brand-alignment for a high-reach influencer. Refactored legacy code and integrated Square Appointments.",
+    description: "Technical debt recovery and brand-alignment for a high-reach influencer. Recovered legacy code and integrated modern scheduling.",
     tags: ["Next.js", "React", "Square API", "Refactoring"],
     liveUrl: "https://www.trubalance.life",
     codeUrl: "https://github.com/CarltonHeywood90/tru-balance-3-24-2026",
