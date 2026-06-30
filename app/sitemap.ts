@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next';
 
+export const dynamic = 'force-static'
+
 // Define a type that strictly matches Next.js expectations
 type SitemapRoute = {
   path: string;
