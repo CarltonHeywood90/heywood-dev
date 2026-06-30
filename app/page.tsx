@@ -38,7 +38,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 grayscale opacity-70">
             <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">Next.js</span>
             <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">Python</span>
-            <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">Node.js</span>
+            <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">FastAPI</span>
             <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">React</span>
             <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">SQL</span>
           </div>
