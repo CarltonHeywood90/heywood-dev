@@ -24,6 +24,8 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://heywooddev.com'),
+
   title: {
     default: "Heywood Dev | Professional Web Development & IT Management",
     template: "%s | Heywood Dev",

@@ -44,3 +44,5 @@ html {
     transform: scale(0.95);
   }
 }
+
+@plugin "@tailwindcss/typography";
