@@ -2,8 +2,25 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
+import type { Metadata } from 'next';
 
-// Define a type for your blog post metadata
+export const metadata: Metadata = {
+  title: 'Engineering Blog & Case Studies | Heywood Dev',
+  description: 'Insights on static-first web architecture, Next.js performance, custom API integrations, and practical software engineering case studies by Carlton Levi Heywood.',
+  keywords: [
+    'Web Development Blog',
+    'Next.js Case Studies',
+    'TypeScript Engineering',
+    'Static Site Architecture Insights',
+    'Carlton Heywood Blog',
+  ],
+  openGraph: {
+    title: 'Engineering Blog & Case Studies | Heywood Dev',
+    description: 'Insights on static-first web architecture, Next.js performance, and custom API integrations.',
+    type: 'website',
+  },
+};
+
 interface PostMetadata {
   slug: string;
   title: string;
@@ -16,7 +33,7 @@ export default function BlogIndex() {
   const contentDir = path.join(process.cwd(), 'content');
   const files = fs.readdirSync(contentDir);
 
-  // Map over the markdown files and extract their frontmatter metadata
+  // Map over the markdown files and extract frontmatter metadata
   const posts: PostMetadata[] = files
     .filter((filename) => filename.endsWith('.md'))
     .map((filename) => {
@@ -30,33 +47,81 @@ export default function BlogIndex() {
         title: data.title || 'Untitled Post',
         publishedAt: data.publishedAt || '',
         summary: data.summary || '',
-        author: data.author || 'Anonymous',
+        author: data.author || 'Carlton Levi Heywood',
       };
     })
     // Sort posts by date (newest first)
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 
+  // Structured Data Schema for Blog Index
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: 'Heywood Dev Blog',
+    url: 'https://heywood.dev/blog',
+    description: 'Practical engineering case studies and web development insights by Carlton Levi Heywood.',
+    author: {
+      '@type': 'Person',
+      name: 'Carlton Levi Heywood',
+    },
+    blogPost: posts.map((post) => ({
+      '@type': 'BlogPosting',
+      headline: post.title,
+      url: `https://heywood.dev/blog/${post.slug}`,
+      datePublished: post.publishedAt,
+      description: post.summary,
+    })),
+  };
+
   return (
-    <main className="max-w-2xl mx-auto p-8">
-      <h1 className="text-4xl font-bold mb-8">Blog</h1>
+    <main className="max-w-4xl mx-auto px-6 py-12 md:py-20">
+      {/* Structured Data Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
+      {/* Header */}
+      <header className="mb-12 text-center md:text-left">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-dark-slate mb-4">
+          Engineering <span className="text-baby-blue">Insights & Case Studies</span>
+        </h1>
+        <p className="text-lg text-slate-600 max-w-2xl">
+          Real-world takeaways on web architecture, Next.js performance, modular design, and API integrations.
+        </p>
+      </header>
       
-      <div className="space-y-8">
+      {/* Blog Feed */}
+      <section className="space-y-10">
+        <h2 className="sr-only">Latest Blog Posts</h2>
         {posts.map((post) => (
-          <article key={post.slug} className="border-b border-slate-100 pb-6">
-            <Link href={`/blog/${post.slug}`} className="group">
-              <h2 className="text-2xl font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">
+          <article 
+            key={post.slug} 
+            className="p-6 bg-white border border-slate-100 rounded-2xl hover:border-baby-blue/40 hover:shadow-md transition-all duration-300"
+          >
+            <Link href={`/blog/${post.slug}`} className="group block">
+              <h2 className="text-2xl font-bold text-dark-slate group-hover:text-baby-blue transition-colors mb-2">
                 {post.title}
               </h2>
             </Link>
-            <p className="text-sm text-slate-500 my-2">
-              {post.publishedAt} • By {post.author}
+            
+            <p className="text-xs font-mono uppercase tracking-wider text-slate-400 mb-3">
+              {post.publishedAt} <span className="mx-1">•</span> By <span className="text-slate-600 font-medium">{post.author}</span>
             </p>
-            <p className="text-slate-600 line-clamp-2">
+
+            <p className="text-slate-600 leading-relaxed line-clamp-3 mb-4">
               {post.summary}
             </p>
+
+            <Link 
+              href={`/blog/${post.slug}`} 
+              className="inline-flex items-center text-sm font-bold text-baby-blue hover:underline"
+            >
+              Read Full Case Study <span className="ml-1">→</span>
+            </Link>
           </article>
         ))}
-      </div>
+      </section>
     </main>
   );
 }

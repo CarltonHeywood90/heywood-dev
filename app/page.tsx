@@ -1,9 +1,52 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import ProjectGrid from './components/ProjectGrid'; // Adjust path if needed
 
+export const metadata: Metadata = {
+  title: 'Custom Web Development & IT Solutions | Heywood Dev',
+  description: 'High-performance static-first web applications, custom Next.js frontends, and API integrations for modern businesses. Book a consultation today.',
+  keywords: [
+    'Custom Web Development',
+    'Next.js Developer',
+    'Static Site Development',
+    'Third-Party API Integration',
+    'Full-Stack Developer Utah',
+  ],
+  openGraph: {
+    title: 'Custom Web Development & IT Solutions | Heywood Dev',
+    description: 'High-performance static-first web applications, custom Next.js frontends, and API integrations.',
+    type: 'website',
+  },
+};
+
 export default function Home() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfessionalService',
+    name: 'Heywood Dev',
+    url: 'https://heywood.dev',
+    description: 'Custom web development, Next.js frontend engineering, and third-party API integrations.',
+    knowsAbout: [
+      'Web Development',
+      'Next.js',
+      'TypeScript',
+      'React',
+      'Tailwind CSS',
+      'API Integration',
+    ],
+    sameAs: [
+      'https://github.com/CarltonHeywood90',
+    ],
+  };
+
   return (
     <div className="space-y-20 pb-20">
+      {/* Structured Data Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* 1. HERO SECTION */}
       <section className="bg-off-white py-20 md:py-32 px-6">
         <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
@@ -11,18 +54,18 @@ export default function Home() {
             Custom Web Solutions
           </span>
           <h1 className="text-5xl md:text-7xl font-extrabold text-dark-slate leading-tight mb-6">
-            Building the Future of the <br />
-            <span className="text-baby-blue">Modern Web.</span>
+            Custom Web Applications & <br />
+            <span className="text-baby-blue">Static-First Development.</span>
           </h1>
           <p className="max-w-2xl text-slate-600 text-lg md:text-xl mb-10 leading-relaxed">
-          High-performance web interfaces powered by modern, reliable third-party integrations.
+            High-performance web interfaces powered by modern, reliable third-party integrations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="https://calendly.com/cjwood1/new-meeting" className="bg-baby-blue text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-baby-blue/90 transition-all shadow-lg shadow-baby-blue/20">
               Book a Consultation
             </Link>
             <Link href="/site/services" className="px-8 py-4 border-2 border-baby-blue text-baby-blue font-medium rounded-lg hover:bg-baby-blue/10 transition-all">
-              View Services
+              Explore Web Development Services
             </Link>
           </div>
         </div>
@@ -31,9 +74,9 @@ export default function Home() {
       {/* 2. TECH STACK STRIP */}
       <section className="max-w-7xl mx-auto px-6">
         <div className="bg-white border border-baby-blue/20 rounded-2xl p-8 shadow-sm">
-          <p className="text-center text-slate-400 text-sm font-medium mb-6 uppercase tracking-wider">
+          <h2 className="text-center text-slate-400 text-sm font-medium mb-6 uppercase tracking-wider">
             Expertise in Modern Technologies
-          </p>
+          </h2>
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 grayscale opacity-70">
             <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">Next.js</span>
             <span className="text-xl font-bold text-dark-slate underline decoration-baby-blue decoration-2 underline-offset-4">Typescript</span>
@@ -45,23 +88,26 @@ export default function Home() {
       </section>
 
       {/* 3. QUICK FEATURES */}
-      <section className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
-        {[
-          { title: "Front-End Engineering.", desc: "Clean, performant, responsive design, and component-based architecture (Next.js/Tailwind)." },
-          { title: "Third-Party Integrations & Automation.", desc: "Connecting your site to the tools your business needs (Payments, Scheduling, EHRs, CRMs) so you don’t have to build them from scratch." },
-          { title: "Fast Deployment", desc: "Optimized workflows using GitHub and Cloudflare for near-instant updates." }
-        ].map((feature, i) => (
-          <div key={i} className="p-8 border border-slate-100 rounded-xl hover:shadow-md transition-shadow bg-white">
-            <h3 className="text-xl font-bold text-dark-slate mb-3">{feature.title}</h3>
-            <p className="text-slate-500 leading-relaxed">{feature.desc}</p>
-          </div>
-        ))}
+      <section className="max-w-7xl mx-auto px-6">
+        <h2 className="sr-only">Core Capabilities</h2>
+        <div className="grid md:grid-cols-3 gap-8">
+          {[
+            { title: "Front-End Engineering.", desc: "Clean, performant, responsive design, and component-based architecture (Next.js/Tailwind)." },
+            { title: "Third-Party Integrations & Automation.", desc: "Connecting your site to the tools your business needs (Payments, Scheduling, EHRs, CRMs) so you don’t have to build them from scratch." },
+            { title: "Fast Deployment", desc: "Optimized workflows using GitHub and Cloudflare for near-instant updates." }
+          ].map((feature, i) => (
+            <div key={i} className="p-8 border border-slate-100 rounded-xl hover:shadow-md transition-shadow bg-white">
+              <h3 className="text-xl font-bold text-dark-slate mb-3">{feature.title}</h3>
+              <p className="text-slate-500 leading-relaxed">{feature.desc}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* 3.5 WHY STATIC BLURB */}
       <section className="max-w-7xl mx-auto px-6">
         <div className="bg-baby-blue/5 border border-baby-blue/10 rounded-2xl p-8 md:p-12 text-center">
-          <h3 className="text-2xl font-bold text-dark-slate mb-4">Why Static-First?</h3>
+          <h2 className="text-2xl font-bold text-dark-slate mb-4">Why Static-First?</h2>
           <p className="text-slate-600 max-w-3xl mx-auto text-lg leading-relaxed">
             My builds are static-first, meaning they are incredibly fast, inherently secure, 
             and cost almost nothing to host. You get a modern, professional web presence 
@@ -70,7 +116,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. PORTFOLIO GRID SECTION (The New Addition) */}
+      {/* 4. PORTFOLIO GRID SECTION */}
       <section className="max-w-7xl mx-auto px-6">
         <div className="mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold text-dark-slate mb-4">
@@ -90,7 +136,7 @@ export default function Home() {
         <div className="bg-dark-slate rounded-3xl p-12 text-center text-white">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to modernize your digital presence?</h2>
           <p className="text-slate-300 mb-10 max-w-xl mx-auto">
-          Let's streamline your workflow and connect your business to the tools it needs to scale—without the technical bloat.
+            Let's streamline your workflow and connect your business to the tools it needs to scale—without the technical bloat.
           </p>
           <Link href="https://calendly.com/cjwood1/new-meeting" className="inline-block bg-baby-blue hover:bg-baby-blue/90 text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105">
             Book My 15-Min Consultation
