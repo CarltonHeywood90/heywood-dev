@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import "./globals.css";
 import Script from 'next/script';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -63,31 +64,35 @@ interface RootLayoutProps {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
+  const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+
   return (
     <html 
       lang="en" 
       className={`${geistSans.variable} ${geistMono.variable} scroll-smooth antialiased`}
-      // 1. Silences errors from browser extensions injecting tokens
       suppressHydrationWarning 
     >
-      {/* Place this inside the <head> tag of your RootLayout */}
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=AW-18080043167"
-        strategy="afterInteractive"
-      />
-      <Script id="google-ads-init" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'AW-18080043167');
-        `}
-      </Script>
       <body 
         className="flex min-h-screen flex-col bg-off-white text-dark-slate"
-        // 2. Double-safety for the body tag
         suppressHydrationWarning
       >
+        {/* Google Ads Conversion Tag */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18080043167"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-18080043167');
+          `}
+        </Script>
+
+        {/* Google Analytics 4 (Renders automatically if env var is set) */}
+        {gaId && <GoogleAnalytics gaId={gaId} />}
+
         <Header />
         
         {/* Constrained Content Well */}
