@@ -3,8 +3,8 @@ import Image from 'next/image';
 import WhyApproach from '@/app/components/WhyApproach';
 
 export const metadata: Metadata = {
-  title: 'About Carlton Heywood | Web Developer & IT Specialist in Utah',
-  description: 'Learn about Carlton Heywood and Heywood Dev. Specialized in high-performance static-first web development, IT management, and custom integrations in Payson, Utah.',
+  title: 'About Carlton Heywood, Payson Web Developer',
+  description: 'Meet Carlton Heywood, the Payson, Utah developer behind Heywood Dev, creating custom websites, Next.js applications, and API integrations for clients across Utah.',
   keywords: [
     'Carlton Heywood',
     'Heywood Dev',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'About Carlton Heywood | Heywood Dev',
-    description: 'High-performance web architecture and IT management solutions based in Payson, Utah.',
+    description: 'Custom web development and API integration from Payson, Utah, serving businesses across the state.',
     type: 'profile',
   },
 };
@@ -79,15 +79,15 @@ export default function AboutPage() {
         {/* Right Column: About Info */}
         <div className="flex-grow">
           <h1 className="text-4xl md:text-5xl font-bold text-dark-slate mb-8">
-            About <span className="text-baby-blue">Heywood Dev</span>
+            About Carlton Heywood, <span className="text-baby-blue">Web Developer in Payson, Utah</span>
           </h1>
           
           <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
             <p>
-              Led by a specialist in IT Management and modern web architecture, Heywood Dev focuses on building high-performance digital solutions that connect your business to the tools you need to scale.
+              Heywood Dev is led by Carlton Heywood, a web developer based in Payson, Utah. I build custom websites and Next.js web applications for small businesses and clients across Utah.
             </p>
             <p>
-              I bridge the gap between clean, intuitive design and reliable third-party integration. Rather than building heavy, complex, and high-maintenance backends, I leverage modern, static-first frameworks to create websites that are incredibly fast, inherently secure, and cost-effective to host.
+              My work includes third-party API integration that connects your website to the tools your business already uses. With modern, static-first frameworks, I create fast, secure, and straightforward web solutions that are practical to maintain.
             </p>
           </div>
         </div>
@@ -96,7 +96,7 @@ export default function AboutPage() {
       <div className="mt-10 space-y-6 text-lg text-slate-600 leading-relaxed">
         <h2 className="sr-only">Our Development Philosophy</h2>
         <p>
-          With a background rooted in meticulous trade work and professional project management, I approach every project with a "built-to-last" mindset. Whether it is a high-converting interface in Next.js or integrating advanced scheduling and automation workflows, the goal is always the same: efficiency, reliability, and speed.
+          With a background rooted in meticulous trade work and professional project management, I approach every project with a built-to-last mindset. Whether it is a high-converting interface in Next.js or integrating advanced scheduling and automation workflows, the goal is always the same: efficiency, reliability, and speed.
         </p>
       </div>
 

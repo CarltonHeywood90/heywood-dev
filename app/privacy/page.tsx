@@ -1,3 +1,15 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy',
+  description: 'Learn how Heywood Dev handles information when you visit the site or inquire about web development and API integration services.',
+  openGraph: {
+    title: 'Privacy Policy | Heywood Dev',
+    description: 'Privacy information for visitors and clients of Heywood Dev.',
+    type: 'website',
+  },
+};
+
 export default function PrivacyPolicy() {
   const lastUpdated = "March 24, 2026";
 

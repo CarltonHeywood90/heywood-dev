@@ -2,21 +2,39 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import MarkdownRenderer from '../MarkdownRenderer';
+import type { Metadata } from 'next';
 
-export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
-  // Await params correctly in Next.js 15+ App Router
+interface PostParams {
+  params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({ params }: PostParams): Promise<Metadata> {
+  const { slug } = await params;
+  const filePath = path.join(process.cwd(), 'content', `${slug}.md`);
+  const fileContent = fs.readFileSync(filePath, 'utf-8');
+  const { data } = matter(fileContent);
+
+  return {
+    title: data.title,
+    description: data.summary,
+    openGraph: {
+      title: `${data.title} | Heywood Dev`,
+      description: data.summary,
+      type: 'article',
+    },
+  };
+}
+
+export default async function Post({ params }: PostParams) {
   const { slug } = await params;
   
-  // Read from your .md file path
   const filePath = path.join(process.cwd(), 'content', `${slug}.md`);
   const fileContent = fs.readFileSync(filePath, 'utf-8');
 
-  // Parse frontmatter data out of the string safely
   const { data: frontmatter, content } = matter(fileContent);
 
   return (
     <article className="max-w-2xl mx-auto p-8 prose prose-slate">
-      {/* You can now cleanly access metadata headers */}
       <h1 className="text-3xl font-bold mb-2">{frontmatter.title}</h1>
       <p className="text-sm text-slate-500 mb-8">
         By {frontmatter.author} • {frontmatter.publishedAt}

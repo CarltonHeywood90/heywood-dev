@@ -1,5 +1,16 @@
 import Link from 'next/link';
 import ProjectGrid from '../../components/ProjectGrid';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Next.js Web Development & API Integration in Utah',
+  description: 'Get custom Next.js web applications, performance improvements, and third-party API integration from a Payson, Utah developer serving businesses statewide.',
+  openGraph: {
+    title: 'Next.js Web Development & API Integration | Heywood Dev',
+    description: 'Custom web applications and technical solutions for small businesses across Utah.',
+    type: 'website',
+  },
+};
 
 export default function AuditPage() {
   return (
@@ -11,12 +22,11 @@ export default function AuditPage() {
             Performance-First Development
           </span>
           <h1 className="text-5xl md:text-7xl font-extrabold text-dark-slate leading-tight mb-6">
-            High-Performance Web <br />
-            <span className="text-baby-blue text-4xl md:text-6xl text-nowrap">Shipped in Days, Not Months.</span>
+            Custom Web Development <br />
+            <span className="text-baby-blue text-4xl md:text-6xl text-nowrap">for Businesses Across Utah.</span>
           </h1>
           <p className="max-w-2xl text-slate-600 text-lg md:text-xl mb-10 leading-relaxed">
-            Stop losing customers to slow, outdated tech. I build secure, 
-            Next.js-powered systems that scale—without the agency bloat.
+            Heywood Dev builds fast, secure Next.js websites and web applications, with third-party API integration for small businesses in Payson and across Utah.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link 

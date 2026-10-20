@@ -1,3 +1,15 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Terms of Service',
+  description: 'Review the terms that apply to the Heywood Dev website and its custom web development, software, and technical consulting services.',
+  openGraph: {
+    title: 'Terms of Service | Heywood Dev',
+    description: 'Terms for the Heywood Dev website and services in Utah.',
+    type: 'website',
+  },
+};
+
 export default function TermsOfService() {
   const lastUpdated = "March 24, 2026";
 
@@ -18,8 +30,8 @@ export default function TermsOfService() {
         <section>
           <h2 className="text-2xl font-bold text-dark-slate mb-3">2. Services Provided</h2>
           <p>
-            Heywood Dev provides professional web development, software engineering, and IT 
-            management consulting. While we strive for excellence and technical accuracy, all 
+            Heywood Dev provides custom web development, software engineering, and technical
+            consulting from Payson, Utah. While we strive for excellence and technical accuracy, all
             services are provided on an as-is and as-available basis unless otherwise 
             specified in a signed project contract.
           </p>

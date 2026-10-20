@@ -1,4 +1,14 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Consultation Scheduled',
+  description: 'Your web development consultation with Heywood Dev has been scheduled.',
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default function AuditSuccessPage() {
   return (
@@ -23,10 +33,10 @@ export default function AuditSuccessPage() {
         </div>
         
         <h1 className="text-3xl font-bold text-gray-900 mb-4">
-          Audit Scheduled!
+          Consultation Scheduled
         </h1>
         <p className="text-gray-600 mb-8">
-          Thank you for booking a 15-minute technical audit. You should receive a confirmation email from Calendly with the meeting details shortly.
+          Thank you for scheduling a conversation with Heywood Dev about your web development project. You should receive a confirmation email from Calendly with the meeting details shortly.
         </p>
 
         <div className="space-y-4">

@@ -11,8 +11,7 @@ const ProjectGrid = () => {
             Recent Builds & Solutions
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            Specialized SaaS prototypes. 
-            Practical code solving real-world business problems.
+            Examples of custom websites, web applications, and software built to solve real-world business problems.
           </p>
         </div>
 

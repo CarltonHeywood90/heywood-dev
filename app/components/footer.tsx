@@ -8,8 +8,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-bold mb-4 text-[#334155]">Heywood Dev</h3>
           <p className="text-slate-500 text-sm leading-relaxed">
-            Building high-performance web applications with a focus on speed, 
-            scalability, and clean code.
+            Custom websites, Next.js applications, and API integration for small businesses in Payson and across Utah.
           </p>
           <p><Link href="/privacy" className="hover:text-[#A2D2FF]">Privacy Policy</Link></p>
           <p><Link href="/terms" className="hover:text-[#A2D2FF]">Terms of Service</Link></p>
@@ -26,7 +25,7 @@ export default function Footer() {
 
         <div>
           <h4 className="font-semibold mb-4 text-slate-700">Location</h4>
-          <p className="text-sm text-slate-500">Based in Utah</p>
+          <p className="text-sm text-slate-500">Based in Payson, Utah</p>
           <p className="text-sm text-slate-500 mt-2">Available for remote projects worldwide.</p>
         </div>
       </div>

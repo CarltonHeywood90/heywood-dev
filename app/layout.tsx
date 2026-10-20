@@ -27,11 +27,11 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://heywooddev.com'),
 
   title: {
-    default: "Heywood Dev | Professional Web Development & IT Management",
+    default: "Web Developer in Payson, Utah | Heywood Dev",
     template: "%s | Heywood Dev",
   },
-  description: "Expert full-stack development and IT management consulting based in Utah. Specializing in Next.js, React, and scalable business solutions.",
-  keywords: ["Web Development", "IT Management", "Utah Dev", "Next.js Expert", "Software Engineering"],
+  description: "Heywood Dev builds custom websites and Next.js web applications, with third-party API integration for small businesses in Payson and across Utah.",
+  keywords: ["Web Developer Payson Utah", "Custom Web Development", "Next.js Web Applications", "Third-Party API Integration", "Utah Web Developer"],
   authors: [{ name: "Carlton Heywood" }],
   creator: "Carlton Heywood",
   openGraph: {
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://heywooddev.com",
     siteName: "Heywood Dev",
-    title: "Heywood Dev | Web Development & IT Management",
-    description: "Modern web solutions and strategic IT consulting.",
+    title: "Web Developer in Payson, Utah | Heywood Dev",
+    description: "Custom web development, Next.js applications, and third-party API integration for small businesses across Utah.",
     images: [
       {
         url: "/og-image.png",
@@ -52,8 +52,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Heywood Dev",
-    description: "Web Development & IT Management",
+    title: "Web Developer in Payson, Utah | Heywood Dev",
+    description: "Custom web development and API integration for businesses in Utah.",
     images: ["/og-image.png"],
   },
 };

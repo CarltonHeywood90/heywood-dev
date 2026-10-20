@@ -5,8 +5,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Engineering Blog & Case Studies | Heywood Dev',
-  description: 'Insights on static-first web architecture, Next.js performance, custom API integrations, and practical software engineering case studies by Carlton Levi Heywood.',
+  title: 'Web Development Articles & Engineering Case Studies',
+  description: 'Practical articles on Next.js, web application architecture, API integrations, and software tools by Carlton Heywood, a developer in Payson, Utah.',
   keywords: [
     'Web Development Blog',
     'Next.js Case Studies',
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     'Carlton Heywood Blog',
   ],
   openGraph: {
-    title: 'Engineering Blog & Case Studies | Heywood Dev',
-    description: 'Insights on static-first web architecture, Next.js performance, and custom API integrations.',
+    title: 'Web Development Articles & Case Studies | Heywood Dev',
+    description: 'Practical insights on Next.js, web applications, and API integration from a Payson, Utah developer.',
     type: 'website',
   },
 };
@@ -84,10 +84,10 @@ export default function BlogIndex() {
       {/* Header */}
       <header className="mb-12 text-center md:text-left">
         <h1 className="text-4xl md:text-5xl font-extrabold text-dark-slate mb-4">
-          Engineering <span className="text-baby-blue">Insights & Case Studies</span>
+          Web Development <span className="text-baby-blue">Insights & Case Studies</span>
         </h1>
         <p className="text-lg text-slate-600 max-w-2xl">
-          Real-world takeaways on web architecture, Next.js performance, modular design, and API integrations.
+          Practical insights on Next.js web applications, API integration, and software engineering from Carlton Heywood in Payson, Utah.
         </p>
       </header>
       

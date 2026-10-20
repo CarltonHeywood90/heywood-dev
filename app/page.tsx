@@ -3,8 +3,8 @@ import Link from 'next/link';
 import ProjectGrid from './components/ProjectGrid'; // Adjust path if needed
 
 export const metadata: Metadata = {
-  title: 'Custom Web Development & IT Solutions | Heywood Dev',
-  description: 'High-performance static-first web applications, custom Next.js frontends, and API integrations for modern businesses. Book a consultation today.',
+  title: 'Web Developer in Payson, Utah | Heywood Dev',
+  description: 'Heywood Dev builds custom websites, Next.js web applications, and third-party API integrations for small businesses in Payson and across Utah.',
   keywords: [
     'Custom Web Development',
     'Next.js Developer',
@@ -13,8 +13,8 @@ export const metadata: Metadata = {
     'Full-Stack Developer Utah',
   ],
   openGraph: {
-    title: 'Custom Web Development & IT Solutions | Heywood Dev',
-    description: 'High-performance static-first web applications, custom Next.js frontends, and API integrations.',
+    title: 'Custom Web Development in Utah | Heywood Dev',
+    description: 'Custom websites, Next.js web applications, and third-party API integration for Utah businesses.',
     type: 'website',
   },
 };
@@ -25,7 +25,7 @@ export default function Home() {
     '@type': 'ProfessionalService',
     name: 'Heywood Dev',
     url: 'https://heywood.dev',
-    description: 'Custom web development, Next.js frontend engineering, and third-party API integrations.',
+    description: 'Custom web development, Next.js web applications, and third-party API integration for small businesses in Payson and across Utah.',
     knowsAbout: [
       'Web Development',
       'Next.js',
@@ -54,11 +54,11 @@ export default function Home() {
             Custom Web Solutions
           </span>
           <h1 className="text-5xl md:text-7xl font-extrabold text-dark-slate leading-tight mb-6">
-            Custom Web Applications & <br />
-            <span className="text-baby-blue">Static-First Development.</span>
+            Custom Web Development <br />
+            <span className="text-baby-blue">for Utah Businesses.</span>
           </h1>
           <p className="max-w-2xl text-slate-600 text-lg md:text-xl mb-10 leading-relaxed">
-            High-performance web interfaces powered by modern, reliable third-party integrations.
+            Heywood Dev builds custom websites and Next.js web applications, with reliable third-party API integration for small businesses in Payson and across Utah.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="https://calendly.com/cjwood1/new-meeting" className="bg-baby-blue text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-baby-blue/90 transition-all shadow-lg shadow-baby-blue/20">
@@ -136,7 +136,7 @@ export default function Home() {
         <div className="bg-dark-slate rounded-3xl p-12 text-center text-white">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to modernize your digital presence?</h2>
           <p className="text-slate-300 mb-10 max-w-xl mx-auto">
-            Let's streamline your workflow and connect your business to the tools it needs to scale—without the technical bloat.
+            Let&apos;s streamline your workflow and connect your business to the tools it needs to scale—without the technical bloat.
           </p>
           <Link href="https://calendly.com/cjwood1/new-meeting" className="inline-block bg-baby-blue hover:bg-baby-blue/90 text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105">
             Book My 15-Min Consultation

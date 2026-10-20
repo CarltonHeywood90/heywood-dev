@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Web Development & API Integration Services | Heywood Dev',
-  description: 'Explore custom web development, third-party API integration, and digital infrastructure maintenance services by Heywood Dev in Payson, Utah.',
+  title: 'Web Development & API Integration in Utah',
+  description: 'Custom website development, Next.js applications, third-party API integrations, and ongoing technical support for businesses in Payson and across Utah.',
   keywords: [
     'Web Development Services',
     'Third-Party API Integration',
@@ -12,8 +12,8 @@ export const metadata: Metadata = {
     'Next.js Web Services',
   ],
   openGraph: {
-    title: 'Web Development & Integration Services | Heywood Dev',
-    description: 'High-performance static-first web applications, third-party API integrations, and cloud hosting management.',
+    title: 'Web Development & API Integration in Utah | Heywood Dev',
+    description: 'Custom Next.js websites and API integrations for Payson and Utah businesses.',
     type: 'website',
   },
 };
@@ -21,18 +21,18 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   const services = [
     {
-      title: "Professional Web Interfaces",
-      description: "I design and develop responsive, high-performance websites optimized for speed and accessibility. I build clean, maintainable, and modern interfaces that ensure your brand looks professional on any device.",
+      title: "Custom Website & Next.js Development",
+      description: "I design and develop responsive, high-performance websites and Next.js web applications for small businesses in Payson and across Utah. Every build is optimized for speed, accessibility, and maintainability.",
       features: ["Responsive Design", "Modern Tech Stack", "Performance Optimization"]
     },
     {
-      title: "Third-Party Integration Specialist",
-      description: "You don't need a custom, high-maintenance backend to have a powerful website. I connect your site to the best-in-class tools you already use—whether it's payment processors, scheduling platforms, CRMs, or email automation—ensuring your digital ecosystem works as a unified whole.",
+      title: "Third-Party API Integration",
+      description: "Connect your website to the tools your business already relies on, including payment processors, scheduling platforms, CRMs, and email automation. API integrations bring those services together without adding an unnecessary custom backend.",
       features: ["Seamless 3rd-Party Connectivity", "Workflow Automation", "Form & Data Collection Handling"]
     },
     {
-      title: "Digital Infrastructure & Maintenance",
-      description: "I provide professional oversight of your digital infrastructure so you don't have to worry about the technical details. From secure, lightning-fast cloud deployments to long-term technical guidance.",
+      title: "Web Application Support & Maintenance",
+      description: "Keep your web applications dependable with secure cloud deployments, performance checks, maintenance, and practical technical guidance for your business.",
       features: ["Cloud Hosting (Vercel/Cloudflare)", "Security Audits", "Legacy System Migration"]
     }
   ];
@@ -45,7 +45,7 @@ export default function ServicesPage() {
       name: 'Heywood Dev',
       url: 'https://heywood.dev',
     },
-    serviceType: 'Web Development and IT Consulting',
+    serviceType: 'Custom Web Development and API Integration',
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Development Services',
@@ -72,10 +72,10 @@ export default function ServicesPage() {
       {/* Hero Header */}
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-6xl font-extrabold text-dark-slate mb-6">
-          Custom Web Development & <span className="text-baby-blue">Integration Services.</span>
+          Custom Web Development & <span className="text-baby-blue">API Integration in Utah.</span>
         </h1>
         <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-          I specialize in building high-performance, static-first websites that integrate seamlessly with the digital tools your business already relies on.
+          Based in Payson, Utah, Heywood Dev builds custom websites and Next.js applications for small businesses, with third-party API integration that connects the tools they already use.
         </p>
       </div>
 
@@ -114,7 +114,7 @@ export default function ServicesPage() {
       <section className="mt-20 bg-dark-slate rounded-3xl p-12 text-center text-white">
         <h2 className="text-3xl font-bold mb-4">Ready to streamline your online presence?</h2>
         <p className="text-slate-300 mb-8 max-w-xl mx-auto">
-          I specialize in solving complex integration problems through simple, elegant solutions. Let's discuss how we can modernize your site and automate your workflow.
+          I specialize in solving complex integration problems through simple, elegant solutions. Let&apos;s discuss how we can modernize your site and automate your workflow.
         </p>
         <a 
           href="https://calendly.com/cjwood1/new-meeting" 

@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Digital Products, Games & Developer Utilities | Heywood Dev',
-  description: 'Explore custom software utilities, Python automation tools, and royalty-free 8-bit game audio loop packs created by Carlton Heywood.',
+  title: 'Developer Tools, Software & Digital Products',
+  description: 'Browse practical software utilities, Python automation tools, and game-ready audio assets created by Carlton Heywood at Heywood Dev.',
   keywords: [
     'Python PDF Receipt Parser',
     'Batch Image Watermarker Utility',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'Carlton Heywood Products',
   ],
   openGraph: {
-    title: 'Digital Products & Utilities | Heywood Dev',
+    title: 'Developer Tools & Digital Products | Heywood Dev',
     description: 'Custom software tools, Python desktop applications, and retro game audio assets.',
     type: 'website',
   },
@@ -90,10 +90,10 @@ export default function ProductsPage() {
           Digital Storefront
         </span>
         <h1 className="text-4xl md:text-6xl font-extrabold text-dark-slate mb-6">
-          Software Tools & <span className="text-baby-blue">Creative Assets.</span>
+          Software Tools & <span className="text-baby-blue">Digital Products.</span>
         </h1>
         <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-          Practical developer utilities, standalone desktop applications, and game-ready audio assets built to solve real-world problems.
+          Explore practical developer utilities, standalone desktop applications, and game-ready audio assets created by Carlton Heywood. For custom websites, web applications, or API integration, see our web development services.
         </p>
       </header>
 
@@ -140,7 +140,7 @@ export default function ProductsPage() {
       <section className="mt-20 bg-dark-slate rounded-3xl p-12 text-center text-white">
         <h2 className="text-3xl font-bold mb-4">Need a custom tool or web app built from scratch?</h2>
         <p className="text-slate-300 mb-8 max-w-xl mx-auto">
-          Whether you need a dedicated internal dashboard or a custom automation script, let's talk about your project requirements.
+          Whether you need a dedicated internal dashboard or a custom automation script, let&apos;s talk about your project requirements.
         </p>
         <Link 
           href="/site/services" 
