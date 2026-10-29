@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     description: 'Custom websites, Next.js web applications, and third-party API integration for Utah businesses.',
     type: 'website',
   },
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function Home() {
@@ -24,7 +27,7 @@ export default function Home() {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
     name: 'Heywood Dev',
-    url: 'https://heywood.dev',
+    url: 'https://heywooddev.com',
     description: 'Custom web development, Next.js web applications, and third-party API integration for small businesses in Payson and across Utah.',
     knowsAbout: [
       'Web Development',

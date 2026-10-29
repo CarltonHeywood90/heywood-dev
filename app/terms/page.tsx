@@ -8,6 +8,9 @@ export const metadata: Metadata = {
     description: 'Terms for the Heywood Dev website and services in Utah.',
     type: 'website',
   },
+  alternates: {
+    canonical: '/terms',
+  },
 };
 
 export default function TermsOfService() {

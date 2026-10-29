@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     description: 'Custom software tools, Python desktop applications, and retro game audio assets.',
     type: 'website',
   },
+  alternates: {
+    canonical: '/site/products',
+  },
 };
 
 export default function ProductsPage() {
@@ -60,7 +63,7 @@ export default function ProductsPage() {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     name: 'Heywood Dev Digital Products & Software',
-    url: 'https://heywood.dev/products',
+    url: 'https://heywooddev.com/site/products',
     description: 'Software utilities, Python scripts, and game audio loop packs by Carlton Heywood.',
     author: {
       '@type': 'Person',

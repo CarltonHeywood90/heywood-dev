@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     description: 'Practical insights on Next.js, web applications, and API integration from a Payson, Utah developer.',
     type: 'website',
   },
+  alternates: {
+    canonical: '/blog',
+  },
 };
 
 interface PostMetadata {
@@ -58,7 +61,7 @@ export default function BlogIndex() {
     '@context': 'https://schema.org',
     '@type': 'Blog',
     name: 'Heywood Dev Blog',
-    url: 'https://heywood.dev/blog',
+    url: 'https://heywooddev.com/blog',
     description: 'Practical engineering case studies and web development insights by Carlton Levi Heywood.',
     author: {
       '@type': 'Person',
@@ -67,7 +70,7 @@ export default function BlogIndex() {
     blogPost: posts.map((post) => ({
       '@type': 'BlogPosting',
       headline: post.title,
-      url: `https://heywood.dev/blog/${post.slug}`,
+      url: `https://heywooddev.com/blog/${post.slug}`,
       datePublished: post.publishedAt,
       description: post.summary,
     })),

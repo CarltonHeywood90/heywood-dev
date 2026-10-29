@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     description: 'Custom web applications and technical solutions for small businesses across Utah.',
     type: 'website',
   },
+  alternates: {
+    canonical: '/site/audit',
+  },
 };
 
 export default function AuditPage() {

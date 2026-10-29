@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     description: 'Custom web development and API integration from Payson, Utah, serving businesses across the state.',
     type: 'profile',
   },
+  alternates: {
+    canonical: '/site/about',
+  },
 };
 
 export default function AboutPage() {
@@ -29,7 +32,7 @@ export default function AboutPage() {
     worksFor: {
       '@type': 'Organization',
       name: 'Heywood Dev',
-      url: 'https://heywood.dev',
+      url: 'https://heywooddev.com',
     },
     address: {
       '@type': 'PostalAddress',

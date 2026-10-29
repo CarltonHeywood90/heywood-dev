@@ -8,6 +8,9 @@ export const metadata: Metadata = {
     description: 'Privacy information for visitors and clients of Heywood Dev.',
     type: 'website',
   },
+  alternates: {
+    canonical: '/privacy',
+  },
 };
 
 export default function PrivacyPolicy() {

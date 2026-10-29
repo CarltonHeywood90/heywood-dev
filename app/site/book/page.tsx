@@ -8,6 +8,9 @@ export const metadata: Metadata = {
     description: 'Discuss your custom web application or integration project with a Payson, Utah developer.',
     type: 'website',
   },
+  alternates: {
+    canonical: '/site/book',
+  },
 };
 
 export default function BookPage() {

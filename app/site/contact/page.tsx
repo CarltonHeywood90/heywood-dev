@@ -8,6 +8,9 @@ export const metadata: Metadata = {
     description: 'Discuss custom website development and API integration for your Utah business.',
     type: 'website',
   },
+  alternates: {
+    canonical: '/site/contact',
+  },
 };
 
 export default function ContactPage() {

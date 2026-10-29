@@ -22,6 +22,9 @@ export async function generateMetadata({ params }: PostParams): Promise<Metadata
       description: data.summary,
       type: 'article',
     },
+    alternates: {
+      canonical: `/blog/${slug}`,
+    },
   };
 }
 

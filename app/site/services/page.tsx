@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     description: 'Custom Next.js websites and API integrations for Payson and Utah businesses.',
     type: 'website',
   },
+  alternates: {
+    canonical: '/site/services',
+  },
 };
 
 export default function ServicesPage() {
@@ -43,7 +46,7 @@ export default function ServicesPage() {
     provider: {
       '@type': 'ProfessionalService',
       name: 'Heywood Dev',
-      url: 'https://heywood.dev',
+      url: 'https://heywooddev.com',
     },
     serviceType: 'Custom Web Development and API Integration',
     hasOfferCatalog: {
