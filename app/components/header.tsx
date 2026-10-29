@@ -39,31 +39,37 @@ export default function Header() {
 
         {/* Mobile Button */}
         <button
+          type="button"
           className="md:hidden p-2 text-[#334155]"
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
+          aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={isOpen}
+          aria-controls="mobile-navigation"
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </nav>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden absolute top-20 left-0 w-full bg-[#F8F9FA] border-b border-[#A2D2FF]/20 shadow-xl z-50">
-          <div className="flex flex-col p-6 gap-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="text-lg font-bold text-[#334155]"
-              >
-                {link.name}
-              </Link>
-            ))}
-          </div>
+      <div
+        id="mobile-navigation"
+        aria-label="Mobile navigation"
+        hidden={!isOpen}
+        className="md:hidden absolute top-20 left-0 w-full bg-[#F8F9FA] border-b border-[#A2D2FF]/20 shadow-xl z-50"
+      >
+        <div className="flex flex-col p-6 gap-6">
+          {navLinks.map((link) => (
+            <Link
+              key={link.name}
+              href={link.href}
+              onClick={() => setIsOpen(false)}
+              className="text-lg font-bold text-[#334155]"
+            >
+              {link.name}
+            </Link>
+          ))}
         </div>
-      )}
+      </div>
     </header>
   );
 }
