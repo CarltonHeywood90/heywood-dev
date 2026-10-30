@@ -10,22 +10,22 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: "Aligned West Chiropractic",
-    description: "A migration from Wix to a custom Next.js environment.",
-    tags: ["Next.js", "Tailwind CSS", "Seamless Workflow Automation."],
+    description: "Moved a local chiropractic practice from a general-purpose site builder to a focused website shaped around its services.",
+    tags: ["Chiropractic practice", "Website refresh", "Local business"],
     liveUrl: "https://www.alignedwest.com",
     codeUrl: "https://github.com/CarltonHeywood90/aligned-west-chiro-demo",
   },
   {
     title: "Tru Balance Massage",
-    description: "Technical debt recovery and brand-alignment for a high-reach influencer. Recovered legacy code and integrated modern scheduling.",
-    tags: ["Next.js", "React", "Square API", "Refactoring"],
+    description: "Refreshed a massage business website and connected it with established scheduling and payment services.",
+    tags: ["Massage therapy", "Online scheduling", "Payments"],
     liveUrl: "https://www.trubalance.life",
     codeUrl: "https://github.com/CarltonHeywood90/tru-balance-3-24-2026",
   },
   {
     title: "Heywood Dev (V1)",
-    description: "My professional storefront and consultation engine. Built on Cloudflare Pages for maximum edge performance and zero-cost hosting.",
-    tags: ["Next.js", "Cloudflare Pages", "Calendly", "SEO"],
+    description: "A clear, fast business website that explains services and makes it easy to start a conversation.",
+    tags: ["Business website", "Consultation booking", "Search visibility"],
     liveUrl: "https://heywooddev.com",
     codeUrl: "https://github.com/CarltonHeywood90/heywood-dev",
   },

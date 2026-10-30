@@ -33,7 +33,7 @@ export default function Header() {
             target="_blank"
             className="bg-[#A2D2FF] text-white px-5 py-2.5 rounded-lg font-bold"
           >
-            Book Consultation
+            Talk About Your Business
           </Link>
         </div>
 

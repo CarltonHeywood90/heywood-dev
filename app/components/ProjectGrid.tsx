@@ -8,10 +8,10 @@ const ProjectGrid = () => {
       <div className="max-w-6xl mx-auto">
         <div className="mb-12 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4">
-            Recent Builds & Solutions
+            Websites for local service businesses
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            Examples of custom websites, web applications, and software built to solve real-world business problems.
+            Each project starts with what the business and its customers need—not a one-size-fits-all technical solution.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ const ProjectGrid = () => {
                   rel="noopener noreferrer"
                   className="flex-1 text-center py-2 px-4 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold transition-colors"
                 >
-                  Live Demo
+                  Visit Website
                 </a>
                 <a 
                   href={project.codeUrl} 
@@ -55,7 +55,7 @@ const ProjectGrid = () => {
                   rel="noopener noreferrer"
                   className="flex-1 text-center py-2 px-4 rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 text-sm font-semibold transition-colors"
                 >
-                  View Code
+                  See on GitHub
                 </a>
               </div>
             </div>

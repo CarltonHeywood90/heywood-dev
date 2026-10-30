@@ -8,7 +8,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-bold mb-4 text-[#334155]">Heywood Dev</h3>
           <p className="text-slate-500 text-sm leading-relaxed">
-            Custom websites, Next.js applications, and API integration for small businesses in Payson and across Utah.
+            Business-first websites for local businesses, clinics, and service providers in Payson and across Utah. Practical, secure, and straightforward to maintain.
           </p>
           <p><Link href="/privacy" className="hover:text-[#A2D2FF]">Privacy Policy</Link></p>
           <p><Link href="/terms" className="hover:text-[#A2D2FF]">Terms of Service</Link></p>
@@ -17,16 +17,16 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-4 text-slate-700">Quick Links</h4>
           <ul className="space-y-2 text-sm text-slate-500">
-            <li><Link href="/site/services" className="hover:text-[#A2D2FF]">Our Services</Link></li>
+            <li><Link href="/site/services" className="hover:text-[#A2D2FF]">Website Services</Link></li>
             <li><Link href="/site/contact" className="hover:text-[#A2D2FF]">Contact & Hours</Link></li>
-            <li><Link href="https://calendly.com/cjwood1/new-meeting" className="hover:text-[#A2D2FF]">Book Me</Link></li>
+            <li><Link href="https://calendly.com/cjwood1/new-meeting" className="hover:text-[#A2D2FF]">Talk About Your Business</Link></li>
           </ul>
         </div>
 
         <div>
           <h4 className="font-semibold mb-4 text-slate-700">Location</h4>
           <p className="text-sm text-slate-500">Based in Payson, Utah</p>
-          <p className="text-sm text-slate-500 mt-2">Available for remote projects worldwide.</p>
+          <p className="text-sm text-slate-500 mt-2">Serving local businesses throughout Utah.</p>
         </div>
       </div>
       

@@ -3,19 +3,18 @@ import Image from 'next/image';
 import WhyApproach from '@/app/components/WhyApproach';
 
 export const metadata: Metadata = {
-  title: 'About Carlton Heywood, Payson Web Developer',
-  description: 'Meet Carlton Heywood, the Payson, Utah developer behind Heywood Dev, creating custom websites, Next.js applications, and API integrations for clients across Utah.',
+  title: 'About Carlton Heywood | Business-First Website Partner',
+  description: 'Meet Carlton Heywood of HeywoodDev: a business-first website partner with degrees in Business Management and IT Management and hands-on full-stack experience.',
   keywords: [
     'Carlton Heywood',
     'Heywood Dev',
-    'Web Developer Payson Utah',
-    'IT Management Specialist',
-    'Static Site Developer',
-    'Utah Web Engineer',
+    'Business Website Consultant Utah',
+    'Business Management and IT Management',
+    'Payson Utah Small Business Websites',
   ],
   openGraph: {
-    title: 'About Carlton Heywood | Heywood Dev',
-    description: 'Custom web development and API integration from Payson, Utah, serving businesses across the state.',
+    title: 'About Carlton Heywood | HeywoodDev',
+    description: 'Business insight and hands-on website experience for local businesses, clinics, and service providers.',
     type: 'profile',
   },
   alternates: {
@@ -28,7 +27,7 @@ export default function AboutPage() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Carlton Heywood',
-    jobTitle: 'Founder & Lead Web Engineer',
+    jobTitle: 'Founder & Business-First Website Partner',
     worksFor: {
       '@type': 'Organization',
       name: 'Heywood Dev',
@@ -40,14 +39,7 @@ export default function AboutPage() {
       addressRegion: 'UT',
       addressCountry: 'US',
     },
-    knowsAbout: [
-      'Web Development',
-      'IT Management',
-      'Next.js',
-      'TypeScript',
-      'Static-First Architecture',
-      'API Integration',
-    ],
+    knowsAbout: ['Business Management', 'IT Management', 'Website Planning', 'Full-Stack Development'],
     sameAs: [
       'https://github.com/CarltonHeywood90',
     ],
@@ -68,44 +60,44 @@ export default function AboutPage() {
           <div className="relative aspect-square overflow-hidden rounded-2xl border-4 border-baby-blue shadow-lg">
             <Image
               src="/images/carlton.jpg" 
-              alt="Carlton Heywood - Founder and Lead Web Developer at Heywood Dev"
+              alt="Carlton Heywood, founder of HeywoodDev"
               fill
               className="object-cover"
               priority
             />
           </div>
           <p className="mt-4 text-center text-xs text-slate-400 font-mono tracking-widest uppercase">
-            Founder // Heywood Dev
+            Founder, HeywoodDev
           </p>
         </div>
 
         {/* Right Column: About Info */}
         <div className="flex-grow">
           <h1 className="text-4xl md:text-5xl font-bold text-dark-slate mb-8">
-            About Carlton Heywood, <span className="text-baby-blue">Web Developer in Payson, Utah</span>
+            Business perspective. <span className="text-baby-blue">Technical follow-through.</span>
           </h1>
           
           <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
             <p>
-              Heywood Dev is led by Carlton Heywood, a web developer based in Payson, Utah. I build custom websites and Next.js web applications for small businesses and clients across Utah.
+              I&apos;m Carlton Heywood, founder of HeywoodDev in Payson, Utah. I hold a BS in Business Management and an MS in IT Management, and bring hands-on full-stack development experience to projects for local businesses, clinics, and service providers.
             </p>
             <p>
-              My work includes third-party API integration that connects your website to the tools your business already uses. With modern, static-first frameworks, I create fast, secure, and straightforward web solutions that are practical to maintain.
+              That combination helps me look beyond the website itself. I consider how your business serves customers, where time gets lost, what information needs protection, and whether a tool&apos;s likely return on investment justifies its cost, upkeep, and risk.
             </p>
           </div>
         </div>
       </div>
 
       <div className="mt-10 space-y-6 text-lg text-slate-600 leading-relaxed">
-        <h2 className="sr-only">Our Development Philosophy</h2>
+        <h2 className="sr-only">How I work</h2>
         <p>
-          With a background rooted in meticulous trade work and professional project management, I approach every project with a built-to-last mindset. Whether it is a high-converting interface in Next.js or integrating advanced scheduling and automation workflows, the goal is always the same: efficiency, reliability, and speed.
+          I start by listening to how your operation works and what your customers need. Then I recommend the simplest dependable approach—including existing services when they are a better fit than building something new. For payments or sensitive client workflows, I favor careful handoffs to appropriate specialist providers rather than adding a custom database and another system for you to maintain.
         </p>
       </div>
 
       <div className="pt-6 mt-8 border-t border-slate-100 text-center">
         <h2 className="text-base italic text-slate-500 font-normal">
-          Based in Payson, Utah. Serving clients worldwide.
+          Based in Payson, Utah. Here to help local businesses across the state.
         </h2>
       </div>
 

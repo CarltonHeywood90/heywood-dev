@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact a Web Developer in Payson, Utah',
-  description: 'Contact Heywood Dev about custom web development, Next.js applications, or API integration for your business in Utah.',
+  title: 'Contact HeywoodDev | Websites for Utah Businesses',
+  description: 'Talk with HeywoodDev about a website that better supports your local business, clinic, or service team.',
   openGraph: {
-    title: 'Contact Heywood Dev | Payson, Utah Web Developer',
-    description: 'Discuss custom website development and API integration for your Utah business.',
+    title: 'Contact HeywoodDev | Payson, Utah',
+    description: 'Share what your business needs from its website and get a practical next step.',
     type: 'website',
   },
   alternates: {
@@ -25,9 +25,9 @@ export default function ContactPage() {
       <div className="grid md:grid-cols-2 gap-16">
         {/* Left Side: Contact Info */}
         <div>
-          <h1 className="text-4xl font-bold text-dark-slate mb-6">Contact a Web Developer in Payson, Utah</h1>
+          <h1 className="text-4xl font-bold text-dark-slate mb-6">Let&apos;s talk about your business.</h1>
           <p className="text-slate-600 mb-8">
-            Tell me about your custom website, Next.js application, or third-party API integration project. Heywood Dev works with small businesses and clients in Payson and across Utah.
+            Tell me what you do, how customers currently find and work with you, and what you would like to improve. I work with small businesses, clinics, and service providers in Payson and across Utah.
           </p>
           
           <div className="space-y-6">

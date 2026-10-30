@@ -16,16 +16,20 @@ export default function WhyApproach() {
   return (
     <section className="max-w-4xl mx-auto px-6 py-12">
       <h2 className="text-2xl font-bold text-dark-slate mb-8 text-center">
-        Why My Approach Works
+        Practical by design
       </h2>
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-3 gap-6">
         <ApproachCard 
-          title="Zero-Bloat Performance" 
-          description="By prioritizing static-first architecture, your site stays lightning-fast and secure, regardless of traffic spikes."
+          title="Business-first decisions"
+          description="Recommendations start with your goals, day-to-day work, customer experience, and risk—not with a technology looking for a problem."
         />
         <ApproachCard 
-          title="Integration-First Strategy" 
-          description="I don't reinvent the wheel. I connect your site to the industry-leading tools (Stripe, Calendly, Square, etc.) that your business already relies on, ensuring a seamless, automated workflow."
+          title="Lean, low-maintenance websites"
+          description="A fast, straightforward website without unnecessary features or a custom system your team has to keep running."
+        />
+        <ApproachCard
+          title="Safer handoffs"
+          description="Established payment and scheduling providers can handle sensitive workflows, helping avoid the added exposure and upkeep of storing that information yourself."
         />
       </div>
     </section>

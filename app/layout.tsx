@@ -28,11 +28,11 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://heywooddev.com'),
 
   title: {
-    default: "Web Developer in Payson, Utah | Heywood Dev",
+    default: "Business-First Websites for Utah Businesses | HeywoodDev",
     template: "%s | Heywood Dev",
   },
-  description: "Heywood Dev builds custom websites and Next.js web applications, with third-party API integration for small businesses in Payson and across Utah.",
-  keywords: ["Web Developer Payson Utah", "Custom Web Development", "Next.js Web Applications", "Third-Party API Integration", "Utah Web Developer"],
+  description: "Fast, low-maintenance websites for Utah small businesses, clinics, and service providers—planned around your operations, customers, and security needs.",
+  keywords: ["Small Business Websites Utah", "Clinic Website Design Utah", "Service Business Websites", "Payson Utah Web Consultant"],
   authors: [{ name: "Carlton Heywood" }],
   creator: "Carlton Heywood",
   openGraph: {
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://heywooddev.com",
     siteName: "Heywood Dev",
-    title: "Web Developer in Payson, Utah | Heywood Dev",
-    description: "Custom web development, Next.js applications, and third-party API integration for small businesses across Utah.",
+    title: "Business-First Websites for Utah Businesses | HeywoodDev",
+    description: "Practical, secure, low-maintenance websites for local businesses, clinics, and service providers.",
     images: [
       {
         url: "/og-image.png",
@@ -53,8 +53,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Developer in Payson, Utah | Heywood Dev",
-    description: "Custom web development and API integration for businesses in Utah.",
+    title: "Business-First Websites for Utah Businesses | HeywoodDev",
+    description: "Practical, secure, low-maintenance websites for local businesses, clinics, and service providers.",
     images: ["/og-image.png"],
   },
 };
